@@ -1,26 +1,19 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-nasa-blue: #0066b2;
+  --color-deep-black: #0b0b0b;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white; /* Default background is white */
+  color: black;
+  margin: 0;
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Subtle grid for the white sections to look "Engineering" like */
+.bg-blueprint {
+  background-image: radial-gradient(#00000010 1px, transparent 1px);
+  background-size: 30px 30px;
 }
